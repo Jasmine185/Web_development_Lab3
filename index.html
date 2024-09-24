@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="randominteger.js"></script>
+    <script>
+        document.write("<h1>A Title</h1>");
+        document.write("<p>This is a paragraph</p>");
+        document.write("<p>Your browser's message: "+navigator.userAgent+"</p>");
+        document.write("Random Integer: "+randomInt())
+    </script>
+</head>
+<body>
+    <h1>Number Guessing Game</h1>
+    <p>We have selected a random number between 1 and 100. Can you guess it ?</p>
+    
+    <input type="number" id="guessInput" placeholder="Enter your guess"/> 
+    <button onclick="checkGuess()">GUESS!</button>
+    <button onclick="restartGame()" id="resetButton" style="display: none;">RESTART</button>
+    <p id="gameStatus"></p>
+    <p id="previousGuesses"></p>
+
+    <script>
+        let secretNumber=randomInt();
+        let guesses=10; //the number of guessing
+        let previousGuesses=[]; //an array to store previous number
+        
+        
+    </script>
+    <p id="gameStatus"></p>
+</body>
+</html>
+
+<!--
+    for(let i=0;i<10;i++){
+            document.write(previousGuesses[i]+" ");
+        }
+-->
